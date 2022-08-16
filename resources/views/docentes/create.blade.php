@@ -43,7 +43,7 @@
             <input id="fotoPerfil" type="file" name="fotoPerfil">
         </div>
         <div class="form-group">
-            <label for="doc_identidad">Cargue documento de identidad</label>
+            <label for="doc_identidad">Cargue su Documento de identidad</label>
             <br>
             <input id="doc_identidad" type="file" name="doc_identidad">
         </div>
