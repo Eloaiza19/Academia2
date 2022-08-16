@@ -18,15 +18,15 @@
 
         <h2>Aqui puedes inscribirte como docente</h2>
         <div class="form-group">
-            <label for="nombre">Nombre del Docente</label>
+            <label for="nombre">Nombre del Docentes</label>
             <input id="nombre" class="form-control" type="text" name="nombre">
         </div>
         <div class="form-group">
-            <label for="apellidos">Apellido del Docente</label>
+            <label for="apellidos">Apellido del Docentes</label>
             <input id="apellidos" class="form-control" type="text" name="apellidos">
         </div>
         <div class="form-group">
-            <label for="tituloUniversitario">Titulo Universitario</label>
+            <label for="tituloUniversitario">Titgigulo Universitario</label>
             <input id="tituloUniversitario" class="form-control" type="text" name="tituloUniversitario">
         </div>
         <div class="form-group">
