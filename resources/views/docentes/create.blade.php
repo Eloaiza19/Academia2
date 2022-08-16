@@ -48,6 +48,6 @@
             <input id="doc_identidad" type="file" name="doc_identidad">
         </div>
         <br>
-        <button class="btn btn-dark" type="submit">Guardar Datos</button>
+        <button class="btn btn-dark" type="submit">Guardar Datos del docente</button>
     </form>
 @endsection
