@@ -26,7 +26,7 @@
             <input id="apellidos" class="form-control" type="text" name="apellidos">
         </div>
         <div class="form-group">
-            <label for="tituloUniversitario">Titgigulo Universitario</label>
+            <label for="tituloUniversitario">Titulo Universitario</label>
             <input id="tituloUniversitario" class="form-control" type="text" name="tituloUniversitario">
         </div>
         <div class="form-group">
@@ -38,7 +38,7 @@
             <input id="fecha_contrato" class="form-control" type="date" name="fecha_contrato">
         </div>
         <div class="form-group">
-            <label for="fotoPerfil">Foto</label>
+            <label for="fotoPerfil">Foto Personal</label>
             <br>
             <input id="fotoPerfil" type="file" name="fotoPerfil">
         </div>
@@ -48,6 +48,6 @@
             <input id="doc_identidad" type="file" name="doc_identidad">
         </div>
         <br>
-        <button class="btn btn-dark" type="submit">Guardar</button>
+        <button class="btn btn-dark" type="submit">Guardar Datos</button>
     </form>
 @endsection
