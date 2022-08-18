@@ -35,7 +35,7 @@ class DocenteController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(storeDocenteRequest $request)
     {
 
         $docentesitos = new Docentes();
@@ -59,7 +59,7 @@ class DocenteController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show( $id)
     {
         $docentesitos = Docentes::find($id);
         return view('docentes.show', compact('docentesitos'));
@@ -104,7 +104,7 @@ class DocenteController extends Controller
     public function destroy($id)
     {
         $docentesitos = Docentes::find($id);
-        $urlImagenBD = $docentesitos->imagen;
+        $urlImagenBD = $docentesitos->fotoPerfil;
         $nombreImagen = str_replace('public/', '\storage\\', $urlImagenBD);
         $rutaCompleta = public_path() . $nombreImagen;
         unlink($rutaCompleta);

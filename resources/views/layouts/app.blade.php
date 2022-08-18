@@ -16,11 +16,17 @@
             <div id="my-nav" class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/docentes/create">Crear curso <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/cursos/create">Crear Curso <span class="sr-only">(current)</span></a>
                     </li>
-                    {{-- <li class="nav-item active">
-                        <a class="nav-link" href="/docentes/nosotros">Sobre nosotros <span class="sr-only">(current)</span></a>
-                    </li> --}}
+                    <li class="nav-item active">
+                        <a class="nav-link" href='/cursos'>Listado Cursos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/docentes/create">Crear Docente <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/cursos/nosotros">Sobre nosotros <span class="sr-only">(current)</span></a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -33,3 +39,5 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     </body>
 </html>
+
+

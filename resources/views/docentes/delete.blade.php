@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('titulo', 'crear docente')
+@section('titulo', 'Eliminado')
 
 @section('contenido')
 

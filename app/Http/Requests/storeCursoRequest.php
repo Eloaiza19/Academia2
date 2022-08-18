@@ -24,9 +24,9 @@ class storeCursoRequest extends FormRequest
     public function rules()
     {
         return [
-            //'nombre' => 'required|max:100',
+            'nombre' => 'required|max:100',
             //'nombre' => 'required|size:12',
-            'nombre' => 'required|email:rfc',
+            //'nombre' => 'required|email:rfc',
             'imagen' => 'required|mimes:jpg',
             //'imagen' => 'required|image',
             //'imagen' => 'required|file|size:320',
