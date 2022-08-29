@@ -13,18 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('docentes', function (Blueprint $table) {
+        Schema::create('municipios', function (Blueprint $table) {
             $table->id();
-
             $table->string('nombre');
-            $table->string('apellidos');
-            $table->text('tituloUniversitario');
-            $table->integer('edad');
-            $table->text('fecha_contrato');
-            $table->text('fotoPerfil');
-            $table->string('doc_identidad');
+            $table->unsignedBigInteger('id_departamento');
             $table->timestamps();
-
+            //llave foranea
+            $table->foreign('id_departamento')->references('id')->on('departamentos')->onDelete('cascade')->onUpdate('cascade');;
         });
     }
 
@@ -35,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('docentes');
+        Schema::dropIfExists('municipios');
     }
 };

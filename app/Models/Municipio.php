@@ -5,18 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Curso extends Model
+class Municipio extends Model
 {
-    protected $fillable = ['nombre', 'description', 'duration', 'image'];
     use HasFactory;
+    protected $fillable = ['id', 'nombre', 'id_departamento'];
 
     //Relación uno a muchos
-    public function subjects(){
-        return $this->hasMany(Materia::class);
-    }
-
-    public function students(){
+    public function estudiantes(){
         return $this->hasMany(Estudiante::class);
     }
-
 }

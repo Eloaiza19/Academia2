@@ -13,6 +13,8 @@ use Illuminate\Pagination\Cursor;
 
 use App\Http\Controllers\DocenteController;
 
+use App\Http\Controllers\EstudiantesController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,6 +28,10 @@ use App\Http\Controllers\DocenteController;
 
 Route::get('/docentes/create', function () {
     return view('docentes.create');
+});
+
+Route::get('/estudiantes/create', function () {
+    return view('estudiantes.create');
 });
 
 Route::get('/', function () {
@@ -67,3 +73,5 @@ Route::get('/iva/{a}/{b}',[ControladorPrecios::class,'getIVA']);
 Route::resource('cursos', CursoController::class);
 
 Route::resource('docentes', DocenteController::class);
+
+Route::resource('estudiantes', EstudiantesController::class);

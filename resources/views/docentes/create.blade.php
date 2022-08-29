@@ -51,5 +51,3 @@
         <button class="btn btn-dark" type="submit">Guardar Datos del docente</button>
     </form>
 @endsection
-
-

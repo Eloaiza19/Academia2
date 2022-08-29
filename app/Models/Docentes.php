@@ -9,4 +9,10 @@ class Docentes extends Model
 {
     protected $fillable = ['nombre','apellidos','tituloUniversitario','edad','fecha_contrato','fotoPerfil','doc_identidad'];
     use HasFactory;
+
+    public function materias(){
+        return $this->belongsTo(Materia::class);
+    }
 }
+
+
